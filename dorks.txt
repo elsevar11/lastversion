@@ -1,0 +1,8 @@
+intitle:index.of "users.db"
+intitle:"index of" service.grp
+allintext:username filetype:log
+intext:apache
+intitle:"index of" "users.sql"
+intitle:"index of" "/ftpusers"
+intitle:"index of" "tomcat-users.xml"
+intext:security
