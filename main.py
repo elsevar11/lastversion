@@ -118,7 +118,7 @@ def google_dorking(api_keys, targets, dorks_file, output_file, results_per_page=
 
                 print("=" * 50)
                 output.write("=" * 50 + "\n")
-                print("Waiting for 3 seconds before processing the next dork...")
+                print("Waiting for 1 seconds before processing the next dork...")
                 time.sleep(1)  # Delay between dorks
 
     except FileNotFoundError:
@@ -135,7 +135,7 @@ if __name__ == "__main__":
     api_keys = load_api_keys(API_KEYS_FILE)
 
     if api_keys:
-        target_input = input("Enter target domains (comma-separated, e.g., expressbank.az,express24.az): ").strip()
+        target_input = input("Enter target domains (comma-separated, e.g., target1.com,target2.com): ").strip()
         targets = [t.strip() for t in target_input.split(",") if t.strip()]
         dorks_file = input("Enter the dorks file path (e.g., dorks.txt): ").strip()
 
